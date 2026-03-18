@@ -22,13 +22,13 @@ export default function Hero() {
             <span className="text-sm font-bold tracking-wide uppercase">Serving Cincinnati, Fairfield & West Chester</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-            Hardscaping & Lawn <br className="hidden md:block" />
-            <span className="text-lime-400"> Experts</span>
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-black text-white leading-[1.1] mb-8 tracking-tighter">
+            Transforming Homes <br className="hidden md:block" />
+            <span className="text-lime-400">One Yard At A Time</span>
           </h1>
 
-          <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            From routine lawn mowing and tree cutting to fully custom paver patios and retaining walls, Lopez Lawncare & Landscaping LLC delivers quality work across Cincinnati.
+          <p className="text-white/90 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed font-medium">
+            Cincinnati's first choice for premium paver patios, structural retaining walls, and precision lawn maintenance. Based in Springdale, serving our neighbors since day one.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
