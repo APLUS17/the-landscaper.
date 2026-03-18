@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "human-writing": {
+      "source": "pr-pm/prpm",
+      "sourceType": "github",
+      "computedHash": "542a852ba6c255e46136d3c9c03e099980b916127b9b619fd4d6b3316fb2528e"
+    },
+    "marketing": {
+      "source": "omer-metin/skills-for-antigravity",
+      "sourceType": "github",
+      "computedHash": "346e536c384ae82a98d5281fc37545abca7a205b2dc5cc4045ceb17159e82c4d"
+    }
+  }
+}
