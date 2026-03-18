@@ -1,9 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { TreePine, CheckCircle2 } from 'lucide-react';
 
 export default function TreeCutting() {
   return (
     <main className="flex-1">
+      <Helmet>
+        <title>Tree Cutting & Removal | Lopez Lawncare</title>
+        <meta name="description" content="Safe and efficient tree cutting, branch removal, and property clearing in Cincinnati, Ohio." />
+      </Helmet>
       {/* Hero Section */}
       <div className="bg-neutral-900 text-white py-24 relative overflow-hidden">
         <div

@@ -9,6 +9,8 @@ import Home from './pages/Home';
 import PaverPatios from './pages/PaverPatios';
 import LawnMowing from './pages/LawnMowing';
 import TreeCutting from './pages/TreeCutting';
+import Portfolio from './pages/Portfolio';
+import NotFound from './pages/NotFound';
 
 export default function App() {
   return (
@@ -22,6 +24,8 @@ export default function App() {
             <Route path="/services/paver-patios" element={<PaverPatios />} />
             <Route path="/services/lawn-mowing" element={<LawnMowing />} />
             <Route path="/services/tree-cutting" element={<TreeCutting />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
         <Footer />

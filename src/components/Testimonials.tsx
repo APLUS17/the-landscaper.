@@ -58,10 +58,20 @@ export default function Testimonials() {
             <span className="font-light">Real Reviews from</span> Real Neighbors
           </h2>
           <div className="flex justify-center items-center space-x-2 mt-4">
-            <div className="flex">
-              {[...Array(5)].map((_, i) => <Star key={i} size={16} className="text-yellow-400 fill-yellow-400" />)}
+            <div className="flex bg-white px-3 py-1.5 rounded-full shadow-sm items-center border border-neutral-100">
+              <span className="font-bold text-neutral-800 mr-2 text-sm flex items-center">
+                <span className="text-blue-500">G</span>
+                <span className="text-red-500">o</span>
+                <span className="text-yellow-500">o</span>
+                <span className="text-blue-500">g</span>
+                <span className="text-green-500">l</span>
+                <span className="text-red-500">e</span>
+              </span>
+              <div className="flex">
+                {[...Array(5)].map((_, i) => <Star key={i} size={14} className="text-yellow-400 fill-yellow-400" />)}
+              </div>
+              <span className="text-neutral-500 text-xs font-semibold ml-2">4.8 Rating</span>
             </div>
-            <span className="text-neutral-500 text-sm font-semibold">4.8 on Google</span>
           </div>
         </div>
 
@@ -71,21 +81,37 @@ export default function Testimonials() {
             key={active}
             className="bg-white p-10 md:p-14 rounded-sm border border-neutral-100 shadow-sm text-center transition-all duration-500 animate-fade-in"
           >
-            {/* Decorative quote mark */}
-            <Quote size={40} className="text-lime-500/20 mx-auto mb-6" />
-
-            <div className="flex justify-center mb-5">
-              {[...Array(t.stars)].map((_, s) => <Star key={s} size={18} className="text-yellow-400 fill-yellow-400" />)}
+            <div className="flex justify-between items-start mb-6">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-lg">
+                  {t.author.charAt(0)}
+                </div>
+                <div className="text-left">
+                  <cite className="font-bold text-neutral-900 not-italic block leading-tight">{t.author}</cite>
+                  <span className="text-neutral-500 text-xs">Local Guide · 12 reviews</span>
+                </div>
+              </div>
+              <div className="flex bg-neutral-50 rounded-full p-2">
+                <span className="font-bold text-xl flex items-center">
+                  <span className="text-blue-500">G</span>
+                </span>
+              </div>
             </div>
 
-            <blockquote className="text-neutral-700 text-lg md:text-xl leading-relaxed italic mb-8 max-w-2xl mx-auto">
-              "{t.quote}"
+            <div className="flex items-center space-x-1 mb-4 border-b border-neutral-100 pb-4">
+              <div className="flex">
+                {[...Array(t.stars)].map((_, s) => <Star key={s} size={14} className="text-yellow-400 fill-yellow-400" />)}
+              </div>
+              <span className="text-neutral-400 text-xs ml-2">• a month ago</span>
+            </div>
+
+            <blockquote className="text-neutral-700 text-left text-sm md:text-base leading-relaxed mb-6">
+              {t.quote}
             </blockquote>
 
-            <div className="border-t border-neutral-100 pt-6">
-              <cite className="font-bold text-neutral-900 not-italic text-base block">{t.author}</cite>
-              <span className="text-lime-500 text-sm font-semibold uppercase tracking-wider">{t.location}</span>
-              <span className="text-neutral-400 text-sm block mt-1">Service: {t.service}</span>
+            <div className="bg-neutral-50 p-3 rounded-sm flex justify-between items-center text-left">
+              <span className="text-neutral-500 text-xs font-semibold uppercase tracking-wider block">Service Rendered</span>
+              <span className="text-lime-600 font-bold text-sm block">{t.service}</span>
             </div>
           </div>
 

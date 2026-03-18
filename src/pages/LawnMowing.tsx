@@ -1,9 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Scissors, CheckCircle2 } from 'lucide-react';
 
 export default function LawnMowing() {
   return (
     <main className="flex-1">
+      <Helmet>
+        <title>Lawn Mowing & Clean Up | Lopez Lawncare</title>
+        <meta name="description" content="Professional lawn care, mulching, and yard cleanup services in Greater Cincinnati and Butler County." />
+      </Helmet>
       {/* Hero Section */}
       <div className="bg-neutral-900 text-white py-24 relative overflow-hidden">
         <div

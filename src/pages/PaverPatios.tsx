@@ -1,9 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Hammer, CheckCircle2 } from 'lucide-react';
 
 export default function PaverPatios() {
   return (
     <main className="flex-1">
+      <Helmet>
+        <title>Paver Patios & Retaining Walls | Lopez Lawncare</title>
+        <meta name="description" content="Custom paver patios and retaining walls in Cincinnati. Transform your backyard with our expert hardscaping services." />
+      </Helmet>
       {/* Hero Section */}
       <div className="bg-neutral-900 text-white py-24 relative overflow-hidden">
         <div
