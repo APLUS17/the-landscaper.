@@ -5,7 +5,7 @@ const steps = [
   {
     icon: <Phone className="w-8 h-8 text-white" />,
     title: '1. Free Estimate',
-    description: 'Call us at (513) 555-0199 or fill out our online form. We’ll discuss your needs and provide a transparent, no-obligation quote.',
+    description: 'Call us at (513) 516-1439 or fill out our online form. We’ll discuss your needs and provide a transparent, no-obligation quote.',
   },
   {
     icon: <CalendarCheck className="w-8 h-8 text-white" />,

@@ -13,9 +13,9 @@ export default function TopBar() {
             <h6 className="title m-0 text-neutral-300 font-semibold">565 Waycross Rd, Cincinnati, OH 45240</h6>
           </div>
           
-          <a href="tel:5136022727" className="widget widget-icon-box flex items-center space-x-2 hover:text-lime-500 transition-colors">
+          <a href="tel:5135161439" className="widget widget-icon-box flex items-center space-x-2 hover:text-lime-500 transition-colors">
             <Phone size={16} className="text-lime-500 shrink-0" />
-            <h6 className="title m-0 text-neutral-300 font-semibold">(513) 602-2727</h6>
+            <h6 className="title m-0 text-neutral-300 font-semibold">(513) 516-1439</h6>
           </a>
           
           <div className="widget widget-icon-box flex items-center space-x-2">

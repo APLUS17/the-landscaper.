@@ -63,10 +63,10 @@ export default function Header() {
                 ))}
               </ul>
               <a
-                href="tel:5138700400"
+                href="tel:5135161439"
                 className="ml-4 bg-lime-500 hover:bg-lime-600 text-white px-5 py-2.5 font-bold text-sm tracking-wider transition-colors rounded-sm uppercase"
               >
-                (513) 870-0400
+                (513) 516-1439
               </a>
             </nav>
             
@@ -89,8 +89,8 @@ export default function Header() {
                 </li>
               ))}
               <li>
-                <a href="tel:5138700400" className="block px-6 py-3 text-lime-500 font-bold uppercase text-sm tracking-wider">
-                  📞 (513) 870-0400
+                <a href="tel:5135161439" className="block px-6 py-3 text-lime-500 font-bold uppercase text-sm tracking-wider">
+                  📞 (513) 516-1439
                 </a>
               </li>
             </ul>

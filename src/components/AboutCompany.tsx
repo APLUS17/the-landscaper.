@@ -40,8 +40,8 @@ export default function AboutCompany() {
               ))}
             </div>
 
-            <a href="tel:5135550199" className="inline-flex items-center bg-lime-500 hover:bg-lime-600 text-white font-bold uppercase tracking-wider text-sm px-6 py-3 transition-colors rounded-sm">
-              Call Us: (513) 555-0199
+            <a href="tel:5135161439" className="inline-flex items-center bg-lime-500 hover:bg-lime-600 text-white font-bold uppercase tracking-wider text-sm px-6 py-3 transition-colors rounded-sm">
+              Call Us: (513) 516-1439
             </a>
           </div>
 
@@ -53,7 +53,7 @@ export default function AboutCompany() {
             </h3>
             <div className="border-b-4 border-lime-500 w-16 mb-8"></div>
             
-            <form action="mailto:info@groundselite.com" method="get">
+            <form action="mailto:info@lopezlandscapingcincinnati.com" method="get">
               <div className="flex flex-col md:flex-row gap-4 mb-4">
                 <div className="flex-1 flex flex-col gap-4">
                   <input
@@ -102,7 +102,7 @@ export default function AboutCompany() {
                   Send My Free Estimate Request
                 </button>
               </div>
-              <p className="text-center text-neutral-400 text-xs mt-4">Or call us directly: <a href="tel:5135550199" className="text-lime-500 font-bold">(513) 555-0199</a></p>
+              <p className="text-center text-neutral-400 text-xs mt-4">Or call us directly: <a href="tel:5135161439" className="text-lime-500 font-bold">(513) 516-1439</a></p>
             </form>
           </div>
 

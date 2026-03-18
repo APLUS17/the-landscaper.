@@ -49,9 +49,9 @@ export default function Footer() {
                 Cincinnati's top choice for custom hardscaping, routine lawn care, and large cleanups. We let our hard work speak for itself.
               </p>
               <div className="space-y-3">
-                <a href="tel:5135550199" className="flex items-center space-x-2 hover:text-lime-500 transition-colors">
+                <a href="tel:5135161439" className="flex items-center space-x-2 hover:text-lime-500 transition-colors">
                   <Phone size={14} className="text-lime-500 shrink-0" />
-                  <span className="font-semibold text-white">(513) 555-0199</span>
+                  <span className="font-semibold text-white">(513) 516-1439</span>
                 </a>
                 <a href="mailto:info@lopezlandscapingcincinnati.com" className="flex items-center space-x-2 hover:text-lime-500 transition-colors">
                   <Mail size={14} className="text-lime-500 shrink-0" />
@@ -125,7 +125,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <span className="text-[#777777]">Need a Free Estimate?</span>
               <Phone size={14} className="text-lime-500" />
-              <a href="tel:5135550199" className="text-white font-bold hover:text-lime-500 transition-colors">(513) 555-0199</a>
+              <a href="tel:5135161439" className="text-white font-bold hover:text-lime-500 transition-colors">(513) 516-1439</a>
             </div>
           </div>
         </div>
