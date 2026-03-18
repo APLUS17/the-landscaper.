@@ -1,34 +1,31 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TopBar from './components/TopBar';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Galleries from './components/Galleries';
-import Process from './components/Process';
-import AboutCompany from './components/AboutCompany';
-import About from './components/About';
-import Testimonials from './components/Testimonials';
-import FAQ from './components/FAQ';
-import Map from './components/Map';
 import Footer from './components/Footer';
+
+// Pages
+import Home from './pages/Home';
+import PaverPatios from './pages/PaverPatios';
+import LawnMowing from './pages/LawnMowing';
+import TreeCutting from './pages/TreeCutting';
 
 export default function App() {
   return (
-    <div className="layout-boxed min-h-screen font-sans text-neutral-800">
-      <TopBar />
-      <Header />
-      <main>
-        <Hero />
-        <Services />
-        <Process />
-        <Galleries />
-        <AboutCompany />
-        <About />
-        <Testimonials />
-        <FAQ />
-        <Map />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="layout-boxed min-h-screen font-sans text-neutral-800 flex flex-col">
+        <TopBar />
+        <Header />
+        <div className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services/paver-patios" element={<PaverPatios />} />
+            <Route path="/services/lawn-mowing" element={<LawnMowing />} />
+            <Route path="/services/tree-cutting" element={<TreeCutting />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }

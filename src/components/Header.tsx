@@ -14,12 +14,12 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#services' },
-    { name: 'Our Work', href: '#gallery' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Reviews', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/#home' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Our Work', href: '/#gallery' },
+    { name: 'About Us', href: '/#about' },
+    { name: 'Reviews', href: '/#testimonials' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -29,7 +29,7 @@ export default function Header() {
           <div className="navigation flex justify-between items-center py-4">
             
             <div className="navbar-header flex items-center justify-between w-full lg:w-auto">
-              <a href="#home" aria-label="Lopez Lawncare & Landscaping LLC" className="navbar-brand flex items-center space-x-2">
+              <a href="/#home" aria-label="Lopez Lawncare & Landscaping LLC" className="navbar-brand flex items-center space-x-2">
                 <Leaf className="text-lime-500" size={32} />
                 {/* Company Info */}
                 <div className="flex flex-col">

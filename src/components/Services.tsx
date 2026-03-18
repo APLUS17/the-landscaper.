@@ -1,5 +1,6 @@
 import React from 'react';
 import { Scissors, Hammer, TreePine, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -7,21 +8,24 @@ const services = [
     title: 'Paver Patios & Retaining Walls',
     description: 'Transform your backyard with beautiful, durable hardscaping. We design and build custom paver patios and structural retaining walls built to last.',
     category: 'Hardscaping',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    link: '/services/paver-patios'
   },
   {
     icon: <Scissors size={28} />,
     title: 'Lawn Mowing & Clean Up',
     description: 'Keep your property pristine with our reliable lawn mowing, mulching, and comprehensive seasonal cleanup services.',
     category: 'Maintenance',
-    image: 'https://images.unsplash.com/photo-1558904541-efa843a96f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1558904541-efa843a96f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    link: '/services/lawn-mowing'
   },
   {
     icon: <TreePine size={28} />,
     title: 'Tree Cutting & Removal',
     description: 'Safe and efficient tree cutting and removal services to clear out overgrown or hazardous trees from your property.',
     category: 'Specialty Service',
-    image: 'https://images.unsplash.com/photo-1592424001807-1c458216598b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1592424001807-1c458216598b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    link: '/services/tree-cutting'
   },
 ];
 
@@ -64,10 +68,10 @@ export default function Services() {
                 <div className="text-lime-500 mb-3">{service.icon}</div>
                 <h3 className="text-xl font-bold text-neutral-900 mb-3">{service.title}</h3>
                 <p className="text-neutral-500 text-sm leading-relaxed mb-5">{service.description}</p>
-                <a href="#contact" className="inline-flex items-center space-x-1 text-lime-500 font-bold uppercase tracking-wider text-xs hover:text-lime-600 transition-colors group/link">
-                  <span>Get a Free Quote</span>
+                <Link to={service.link} className="inline-flex items-center space-x-1 text-lime-500 font-bold uppercase tracking-wider text-xs hover:text-lime-600 transition-colors group/link">
+                  <span>Learn More</span>
                   <ArrowRight size={14} className="transform group-hover/link:translate-x-1 transition-transform" />
-                </a>
+                </Link>
               </div>
             </div>
           ))}
