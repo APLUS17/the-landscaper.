@@ -8,6 +8,7 @@ import Process from '../components/Process';
 import AboutCompany from '../components/AboutCompany';
 import About from '../components/About';
 import Testimonials from '../components/Testimonials';
+import Locations from '../components/Locations';
 import Map from '../components/Map';
 import FAQ from '../components/FAQ';
 
@@ -59,11 +60,12 @@ export default function Home() {
       <Services />
       <Process />
       <Galleries />
-      <AboutCompany />
       <About />
       <Testimonials />
+      <Locations />
       <Map />
       <FAQ />
+      <AboutCompany />
     </main>
   );
 }
